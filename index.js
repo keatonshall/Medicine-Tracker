@@ -6,7 +6,8 @@ document.getElementById("date").innerHTML = (date.getMonth()+1)+"/"+date.getDate
 
 let selected = 0;
 let amount = 0;
-let takings = JSON.parse(localStorage.getItem("takings"));
+
+let takings = (JSON.parse(localStorage.getItem("takings")) == null)? []: JSON.parse(localStorage.getItem("takings"));
 let pastIndex = 0;
 
 
@@ -80,7 +81,7 @@ function addToForm(taking){
       location = "Upper Right"
       break;
     case 2:
-      location = "Midele Right"
+      location = "Middle Right"
       break;
     case 3:
       location = "Lower Right"

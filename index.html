@@ -18,7 +18,7 @@ updateDate();
 <button id = "right-arrow" class="arrow" type="button" name="button" onclick="changePast(1)">&rarr;</button>
   </div>
   <div class="past">
-    <p id="past-date">3/14/15</p>
+    <p id="past-date">No Past Data</p>
     <div class="past-taking-info">
 
 
@@ -30,7 +30,7 @@ updateDate();
       <div id = "past5" class="past-grid-spot"></div>
       <div id = "past6" class="past-grid-spot"></div>
     </div>
-    <p id="past-amount">0</p>
+    <p id="past-amount"></p>
       </div>
   </div>
 </div>
@@ -80,8 +80,10 @@ updateDate();
 <button id="take-button" type="button" name="button" onclick="buttonTake()">Take</button>
 </div>
 <script type="text/javascript">
+  if(takings.length>0){
   pastIndex=takings.length-1;
   showPast(takings[takings.length-1]);
+}
 </script>
 
   </body>
