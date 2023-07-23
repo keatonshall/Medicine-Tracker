@@ -1,0 +1,141 @@
+body{
+  background-color: royalblue;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.leg-grid{
+  margin:20px;
+  text-align: center;
+  display: inline-grid;
+  /* width: 200px; */
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: darkblue;
+  border-radius: 30px;
+  /* padding: 10px; */
+}
+
+.leg-grid-spot{
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.selection-button{
+  padding: 30px;
+  border-radius: 20px;
+  border: white;
+}
+
+.input-area{
+  background-color: grey;
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+input[type="range"]{
+  transform: rotate(270deg);
+margin-top: 50%;
+height: 30px;
+
+}
+
+.amount-selection{
+  display: inline-grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+#amount{
+  font-size: 50px;
+  font-family: sans-serif;
+  padding-top: 50%;
+  color: white;
+}
+
+#take-button{
+  margin: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 100px;
+  font-family: sans-serif;
+  border-radius: 50px;
+  border-color: white;
+}
+
+#take-button:active{
+  background:violet;
+}
+
+
+
+.selection-area{
+text-align:center;
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+ /* display: inline-grid;
+  /* grid-template-columns: auto auto; */
+}
+
+.past-grid{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.past{
+  text-align: center;
+  background-color: grey;
+  margin: 10px;
+  display: inline-block;
+}
+.past-taking-info{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+
+}
+
+#past-date{
+  font-size: 25px;
+}
+
+#past-amount{
+
+  font-size: 50px;
+padding: 20px;
+  font-family: sans-serif;
+
+}
+
+.past-grid-spot{
+  padding: 20px;
+  border-radius: 15px;
+
+  background-color: white;
+  margin:10px
+}
+
+.arrow{
+  font-size: 20px;
+  padding: 10px;
+}
+
+body{
+  display: grid;
+  text-align: center;
+
+}
+
+.past-super{
+
+}

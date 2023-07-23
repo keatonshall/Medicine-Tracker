@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Keaton's Shot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" charset="utf-8"></script>
+  </head>
+  <body>
+<h1 id="date">7-21-2023</h1>
+<script>
+updateDate();
+
+</script>
+<div class="past-super">
+  <div class="arrows">
+<button id="left-arrow" class="arrow" type="button" name="button" onclick="changePast(-1)">&larr;</button>
+<button id = "right-arrow" class="arrow" type="button" name="button" onclick="changePast(1)">&rarr;</button>
+  </div>
+  <div class="past">
+    <p id="past-date">3/14/15</p>
+    <div class="past-taking-info">
+
+
+    <div class="past-grid">
+      <div id = "past1" class="past-grid-spot"></div>
+      <div id = "past2" class="past-grid-spot"></div>
+      <div id = "past3"class="past-grid-spot"></div>
+      <div id = "past4" class="past-grid-spot"></div>
+      <div id = "past5" class="past-grid-spot"></div>
+      <div id = "past6" class="past-grid-spot"></div>
+    </div>
+    <p id="past-amount">0</p>
+      </div>
+  </div>
+</div>
+
+<div class="selection-area">
+
+
+<div class="input-area">
+
+<div class="leg-grid">
+  <div class="leg-grid-spot">
+  <button id="leg-1" class="selection-button" type="button" name="button" onclick="select(1)"></button>
+  </div>
+  <div class="leg-grid-spot">
+  <button id="leg-2" class="selection-button" type="button" name="button" onclick="select(2)"></button>
+  </div>
+  <div class="leg-grid-spot">
+  <button id="leg-3" class="selection-button" type="button" name="button" onclick="select(3)"></button>
+  </div>
+  <div class="leg-grid-spot">
+  <button id="leg-4" class="selection-button" type="button" name="button" onclick="select(4)"></button>
+  </div>
+  <div class="leg-grid-spot">
+  <button id="leg-5" class="selection-button" type="button" name="button" onclick="select(5)"></button>
+  </div>
+  <div class="leg-grid-spot">
+  <button id="leg-6" class="selection-button" type="button" name="button" onclick="select(6)"></button>
+  </div>
+
+</div>
+<div class="amount-selection">
+  <input id="amount-slider" type="range" name="" value="2.0" min="0" max="3" step = "0.2" list="steplist" oninput="changeAmount()">
+  <!-- <datalist id="steplist">
+    <option>0.4</option>
+    <option>0.8</option>
+    <option>1.2</option>
+    <option>1.6</option>
+    <option>2.0</option>
+    <option>2.4</option>
+    <option>2.8</option>
+
+
+  </datalist> -->
+  <p id="amount">2.0</p>
+</div>
+</div>
+<button id="take-button" type="button" name="button" onclick="buttonTake()">Take</button>
+</div>
+<script type="text/javascript">
+  pastIndex=takings.length-1;
+  showPast(takings[takings.length-1]);
+</script>
+
+  </body>
+
+
+</html>
