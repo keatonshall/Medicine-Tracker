@@ -27,7 +27,9 @@ let newAmount = Math.round((amount+d)*10)/10;//This acount for floating point er
   if(newAmount >=0 && newAmount <= 3){
   amount = newAmount;
 }
+
 // document.getElementById("amount").innerHTML = (Math.floor(amount)==amount)? amount+".0": amount;
+document.getElementById("amount").innerHTML=amount;
 //This weird logic acounts for a consistant .0 even when it is a whole number
 }
 
