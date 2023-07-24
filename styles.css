@@ -158,7 +158,7 @@ body{
 
 .amount-button{
 
-  font-size: 300%;
+  /* font-size: 300%; */
   background-color: violet;
   font-color: white;
   border-radius: 20px;
