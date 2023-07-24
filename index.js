@@ -22,13 +22,13 @@ function select(buttonIdNum){
 }
 
 function changeAmount(d){
-//   // let newAmount = document.getElementById("amount-slider").value;
-// let newAmount = Math.round((amount+d)*10)/10;//This acount for floating point errors
-//   if(newAmount >=0 && newAmount <= 3){
-//   amount = newAmount;
-// }
-// document.getElementById("amount").innerHTML = (Math.floor(amount)==amount)? amount+".0": amount;
-// //This weird logic acounts for a consistant .0 even when it is a whole number
+  // let newAmount = document.getElementById("amount-slider").value;
+let newAmount = Math.round((amount+d)*10)/10;//This acount for floating point errors
+  if(newAmount >=0 && newAmount <= 3){
+  amount = newAmount;
+}
+document.getElementById("amount").innerHTML = (Math.floor(amount)==amount)? amount+".0": amount;
+//This weird logic acounts for a consistant .0 even when it is a whole number
 }
 
 function buttonTake(){
