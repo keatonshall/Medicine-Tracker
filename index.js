@@ -28,6 +28,7 @@ let newAmount = Math.round((amount+d)*10)/10;//This acount for floating point er
   amount = newAmount;
 }
 document.getElementById("amount").innerHTML = (Math.floor(amount)==amount)? amount+".0": amount;
+//This weird logic acounts for a consistant .0 even when it is a whole number
 }
 
 function buttonTake(){
