@@ -5,7 +5,7 @@ document.getElementById("date").innerHTML = (date.getMonth()+1)+"/"+date.getDate
 }
 
 let selected = 0;
-let amount = 0;
+let amount = 2;
 
 let takings = (JSON.parse(localStorage.getItem("takings")) == null)? []: JSON.parse(localStorage.getItem("takings"));
 let pastIndex = 0;
@@ -21,10 +21,13 @@ function select(buttonIdNum){
   selected = buttonIdNum;
 }
 
-function changeAmount(){
-  let newAmount = document.getElementById("amount-slider").value;
-  document.getElementById("amount").innerHTML = newAmount;
+function changeAmount(d){
+  // let newAmount = document.getElementById("amount-slider").value;
+let newAmount = Math.round((amount+d)*10)/10;//This acount for floating point errors
+  if(newAmount >=0 && newAmount <= 3){
   amount = newAmount;
+}
+document.getElementById("amount").innerHTML = (Math.floor(amount)==amount)? amount+".0": amount;
 }
 
 function buttonTake(){

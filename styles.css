@@ -10,32 +10,41 @@ h1{
 }
 
 .leg-grid{
+  /* width: 100%; */
+  /* width: 100%; */
   margin:20px;
+  padding: 10px;
   text-align: center;
   display: inline-grid;
   /* width: 200px; */
-  grid-template-columns: auto auto;
+  grid-template-columns:  50% 50%;
   grid-template-rows: auto auto auto;
   background-color: darkblue;
-  border-radius: 30px;
+  border-radius: 20px;
   /* padding: 10px; */
 }
 
-.leg-grid-spot{
+/* .leg-grid-spot{
   padding: 5px;
   margin: 5px;
   text-align: center;
-  font-size: 30px;
-}
+  /* //font-size: 30px; */
+/* } */
 
 .selection-button{
   padding: 30px;
+  margin: 10px;
+  /* width: 80%; */
+  aspect-ratio: 1/1;
+
+  /* width: 100% */
   border-radius: 20px;
   border: white;
 }
 
 .input-area{
-  background-color: grey;
+  width: 100%;
+  background-color: none;
   display: grid;
   grid-template-columns: auto auto;
 
@@ -49,9 +58,12 @@ height: 30px;
 }
 
 .amount-selection{
-  display: inline-grid;
-  grid-template-rows: auto auto;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
   text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #amount{
@@ -59,6 +71,7 @@ height: 30px;
   font-family: sans-serif;
   padding-top: 50%;
   color: white;
+
 }
 
 #take-button{
@@ -69,7 +82,7 @@ height: 30px;
   font-size: 100px;
   font-family: sans-serif;
   border-radius: 50px;
-  border-color: white;
+  border: none;
 }
 
 #take-button:active{
@@ -79,6 +92,7 @@ height: 30px;
 
 
 .selection-area{
+  width: 100%;
 text-align:center;
 display: inline-block;
 margin-left: auto;
@@ -137,5 +151,15 @@ body{
 }
 
 .past-super{
+display: none;
+}
 
+.amount-button{
+
+  font-size: 300%;
+  background-color: violet;
+  font-color: white;
+  border-radius: 20px;
+  aspect-ratio: 1/1;
+  border: none;
 }

@@ -41,28 +41,28 @@ updateDate();
 <div class="input-area">
 
 <div class="leg-grid">
-  <div class="leg-grid-spot">
+  <!-- <div class="leg-grid-spot"> -->
   <button id="leg-1" class="selection-button" type="button" name="button" onclick="select(1)"></button>
-  </div>
-  <div class="leg-grid-spot">
+  <!-- </div> -->
+  <!-- <div class="leg-grid-spot"> -->
   <button id="leg-2" class="selection-button" type="button" name="button" onclick="select(2)"></button>
-  </div>
-  <div class="leg-grid-spot">
+  <!-- </div> -->
+  <!-- <div class="leg-grid-spot"> -->
   <button id="leg-3" class="selection-button" type="button" name="button" onclick="select(3)"></button>
-  </div>
-  <div class="leg-grid-spot">
+  <!-- </div> -->
+  <!-- <div class="leg-grid-spot"> -->
   <button id="leg-4" class="selection-button" type="button" name="button" onclick="select(4)"></button>
-  </div>
-  <div class="leg-grid-spot">
+  <!-- </div> -->
+  <!-- <div class="leg-grid-spot"> -->
   <button id="leg-5" class="selection-button" type="button" name="button" onclick="select(5)"></button>
-  </div>
-  <div class="leg-grid-spot">
+  <!-- </div>
+  <div class="leg-grid-spot"> -->
   <button id="leg-6" class="selection-button" type="button" name="button" onclick="select(6)"></button>
-  </div>
+  <!-- </div> -->
 
 </div>
 <div class="amount-selection">
-  <input id="amount-slider" type="range" name="" value="2.0" min="0" max="3" step = "0.2" list="steplist" oninput="changeAmount()">
+  <!-- <input id="amount-slider" type="range" name="" value="2.0" min="0" max="3" step = "0.2" list="steplist" oninput="changeAmount()"> -->
   <!-- <datalist id="steplist">
     <option>0.4</option>
     <option>0.8</option>
@@ -74,7 +74,9 @@ updateDate();
 
 
   </datalist> -->
+  <button id="+button" class="amount-button" type="button" name="button" onclick="changeAmount(0.2)">+</button>
   <p id="amount">2.0</p>
+  <button id="-button"  class="amount-button" type="button" name="button" onclick="changeAmount(-0.2)">-</button>
 </div>
 </div>
 <button id="take-button" type="button" name="button" onclick="buttonTake()">Take</button>
